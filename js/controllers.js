@@ -1,1 +1,1 @@
-angular.module( 'controllers', ['homeModule'] );
+angular.module( 'controllers', ['homeModule','htmlModule','javascriptModule'] );

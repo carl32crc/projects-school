@@ -1,1 +1,1 @@
-angular.module('routes',['routeHome']);
+angular.module('routes',['routeHome','routeHtml','routeJavascript']);

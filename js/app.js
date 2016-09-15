@@ -1,0 +1,1 @@
+angular.module('myProjectsSchool',[ 'ngRoute','controllers','routes']);

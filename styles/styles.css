@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
 .content-margin-top{
 	margin-top: 50px;
 }
@@ -18,4 +20,37 @@
 .stylish-input-group{
 	width: 30%;
 	float: right;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  line-height: 1.25;
+  margin: 0;
+}
+.menuPersonal {
+  background: #384150;
+  padding: 2em;
+  text-align: center;
+}
+.menuPersonal ul {
+  padding: 0;
+}
+.menuPersonal li {
+  display: inline-block;
+  font-size: 1.5em;
+  padding: .25em 1em;
+  text-transform: uppercase;
+}
+.menuPersonal li:not(:last-child) {
+  border-right: 1px solid #666;
+}
+.menuPersonal a {
+  border-bottom: 3px solid #666;
+  color: #ccc;
+  text-decoration: none ;
+}
+.menuPersonal a:hover {
+  border-bottom: 3px solid #8bc34a;
+  color: #ccc;
+  text-decoration: none;
 }

@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 
 .content-margin-top{
-	margin-top: 50px;
+	margin-top: 100px;
 }
 
 .stylish-input-group .input-group-addon{
@@ -51,6 +51,8 @@ body {
 }
 .menuPersonal a:hover {
   border-bottom: 3px solid #8bc34a;
-  color: #ccc;
-  text-decoration: none;
+}
+
+.active a{
+ border-bottom: 3px solid #8bc34a;
 }

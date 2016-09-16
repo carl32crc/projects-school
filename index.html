@@ -9,12 +9,12 @@
 
 </head>
 <body>
-	<nav class="menuPersonal">
+	<nav class="menuPersonal navbar-fixed-top">
 		<ul>
 			<li ng-class="{ 'active' : $root.section === 'HOME' }"><a href="/#/">Home</a></li>
-			<li><a href="/#/htmlcss">Html/Css</a></li>
-			<li><a href="/#/javascript">JavaScript</a></li>
-			<li><a href="/#/php">Php</a></li>
+			<li ng-class="{ 'active' : $root.section === 'HTML' }"><a href="/#/htmlcss">Html/Css</a></li>
+			<li ng-class="{ 'active' : $root.section === 'JAVASCRIPT' }"><a href="/#/javascript">JavaScript</a></li>
+			<li ng-class="{ 'active' : $root.section === 'PHP' }"><a href="/#/php">Php</a></li>
 		</ul>
 	</nav>
 

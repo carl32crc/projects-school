@@ -1,7 +1,7 @@
 angular.module("htmlModule", [])
 	.controller("html", function( $rootScope,$scope) {
 
-		$rootScope.section ="HTML";
+		$rootScope.section ="HTML5/CSS3";
 
 		$scope.projects = [
 				{ name: 'Project HTML - 01', url: '#',

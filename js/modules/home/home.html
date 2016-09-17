@@ -10,7 +10,7 @@
 <header class="header">
 	<div class="row">
 		<div class="col-md-4">
-			<img class="resume-portfolio-pic" src="http://orig01.deviantart.net/7d07/f/2013/260/7/2/gif___yoda_200x200_by_robbiebr-d6mmvio.gif">
+			<img class="resume-portfolio-pic" src="img/yoda.gif">
 		</div>
 		<div class="col-md-8">
 			<div class="resume-name">
@@ -38,19 +38,19 @@
 </div>
 <div class="row">
 	<div class="col-md-12">
-		<h1 class="page-header">ARTICLES
+		<h1 class="page-header">TOOLS
 			<small>For Devolopers</small>
 		</h1>
 	</div>
 </div>
 
 <div class="row">
-  <div class="col-sm-6 col-md-4" ng-repeat="article in articles">
+  <div class="col-sm-6 col-md-4" ng-repeat="tool in tools">
     <div class="thumbnail">
-      <a href="{{article.url}}"><img src="http://placehold.it/350x200" alt="..."></a>
+      <a href="{{tool.url}}" target="_blank"><img src="{{tool.img}}" alt="..."></a>
       <div class="caption">
-        <a href="{{article.url}}"><h3>{{article.name}}</h3></a>
-        <p>{{article.description}}</p>
+        <a href="{{tool.url}}" target="_blank"><h3>{{tool.name}}</h3></a>
+        <p>{{tool.description}}</p>
       </div>
     </div>
   </div>

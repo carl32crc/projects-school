@@ -3,13 +3,13 @@ angular.module("homeModule", [])
 
 		$rootScope.section ="HOME";
 
-		$scope.articles = [
-				{ name: 'Article - 01', url: '#',
-				description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.'},
-				{ name: 'Article - 02', url: '#',
-				description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Laudantium veniam exercitationem expedita laborum at voluptate.Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.'},
-				{ name: 'Article - 03', url: '#',
-				description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.'},
+		$scope.tools = [
+				{ name: 'Display:flex', url: 'https://css-tricks.com/snippets/css/a-guide-to-flexbox/',img:'img/displayflex.png',
+				description:'Propietat CSS per ajudar a crear entorns responsive i posicionar de forma més sencilla els elements.'},
+				{ name: 'Can I use?', url: 'http://caniuse.com/#search=display%3Aflex',img:'img/icanuse.png',
+				description:'Pàgina per comprovar si una propietat CSS funciona en tots els navegadors.'},
+				{ name: 'Guia Git', url: 'http://rogerdudler.github.io/git-guide/index.es.html#',img:'img/git.png',
+				description:'Petita guia per controlar de forma senzilla les comandes Git, poder tenir el control del repositori.'},
 ];
 
 

@@ -65,47 +65,63 @@ body {
 
 h5 { font-weight: bold; }
 
-    #resume-container {
-      margin-bottom: 40px;
-      padding-bottom: 20px;
-    }
+#resume-container {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
 
-    #resume-container header {
-      background: #4caf7c;
-      padding: 40px 0 20px;
-      position: relative;
-    }
+#resume-container header {
+  background: #4caf7c;
+  padding: 40px 0 20px;
+  position: relative;
+}
 
-    #resume-container header:after {
-      background: inherit;
-      content: '';
-      display: block;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      right: 0;
-      z-index: -1;
-      -webkit-backface-visibility: hidden;
-    }
+#resume-container header:after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+}
 
-    #resume-container header:after {
-      bottom: 0;
-      -webkit-transform: skewY(-2.5deg);
-          transform: skewY(-2.5deg);
-      -webkit-transform-origin: 100%;
-          transform-origin: 100%;
-    }
+#resume-container header:after {
+  bottom: 0;
+  -webkit-transform: skewY(-2.5deg);
+      transform: skewY(-2.5deg);
+  -webkit-transform-origin: 100%;
+      transform-origin: 100%;
+}
 
-    #resume-container header .resume-portfolio-pic { border-radius: 50%; height: 200px; width: 200px; margin: 0 auto; display: block; }
+#resume-container header .resume-portfolio-pic { border-radius: 50%; height: 200px; width: 200px; margin: 0 auto; display: block; }
 
-    .resume-name { text-align: center; color: white; padding-top: 50px; }
+.resume-name { text-align: center; color: white; padding-top: 50px; }
 
-    #resume-container .contact-info { text-align: center; padding: 10px 0; margin: 20px 0; color: white; }
-    #resume-container .contact-info a  { color: white; text-decoration: none; }
+#resume-container .contact-info { text-align: center; padding: 10px 0; margin: 20px 0; color: white; }
+#resume-container .contact-info a  { color: white; text-decoration: none; }
 
-    #resume-container #summary { padding: 50px 10px 0; }
-    #resume-container #summary .summary { padding: 0 20px; }
+#resume-container #summary { padding: 50px 10px 0; }
+#resume-container #summary .summary { padding: 0 20px; }
 
-    #resume-container .skill-text { text-align: center; }
+#resume-container .skill-text { text-align: center; }
 
-    #resume-container .contact-info .email, #resume-container .contact-info .phone { margin-bottom: 20px; }
+#resume-container .contact-info .email, #resume-container .contact-info .phone { margin-bottom: 20px; }
+
+.page-header{
+  border-bottom: 1px solid #fff;
+}
+
+.text-size-profile{
+  font-size: 5em;
+}
+
+.text-size-profile span{
+  font-size: 7em;
+}
+
+.margin-bottom-projects{
+  margin-bottom: 40px;
+}

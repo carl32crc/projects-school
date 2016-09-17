@@ -1,5 +1,5 @@
-<div class="content-margin-top">
-	<div class="row">
+<div class="row content-margin-top">
+	<div class="col-md-12">
 		<h1 class="page-header">{{$root.section}}
 			<small>Projects
 					<div class="input-group stylish-input-group">
@@ -14,7 +14,7 @@
 		</h1>
 	</div>
 </div>
-<div ng-repeat="project in projects | filter : project">
+<div class="margin-bottom-projects" ng-repeat="project in projects | filter : project">
 		<div class="row">
 			<div class="col-md-7">
 				<a href="{{project.url}}">
@@ -28,6 +28,5 @@
 			<a class="btn btn-primary" href="{{project.url}}">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
 		</div>
 	</div>
-	<hr>
 </div>
 

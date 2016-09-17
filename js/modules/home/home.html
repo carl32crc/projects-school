@@ -30,7 +30,7 @@
 				<a href="mailto:carl.45.cr@gmail.com"> carl.45.cr@gmail.com</a>
 			</div>
 			<div class="col-md-4 phone">
-				<a href="https://github.com/carlcrc" target="_blank"><i class="fa fa-github fa-lg"></i> carlcrc</a>
+				<a href="https://github.com/carl32crc" target="_blank"><i class="fa fa-github fa-lg"></i> carlcrc</a>
 			</div>
 		</div>
 	</div>
@@ -43,6 +43,15 @@
 		</h1>
 	</div>
 </div>
-<section>
-	
-</section>
+
+<div class="row">
+  <div class="col-sm-6 col-md-4" ng-repeat="article in articles">
+    <div class="thumbnail">
+      <a href="{{article.url}}"><img src="http://placehold.it/350x200" alt="..."></a>
+      <div class="caption">
+        <a href="{{article.url}}"><h3>{{article.name}}</h3></a>
+        <p>{{article.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

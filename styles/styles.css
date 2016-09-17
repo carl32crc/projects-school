@@ -118,10 +118,16 @@ h5 { font-weight: bold; }
   font-size: 5em;
 }
 
-.text-size-profile span{
-  font-size: 7em;
-}
-
 .margin-bottom-projects{
   margin-bottom: 40px;
+}
+
+.age-box {
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff; 
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  text-align: center;
 }

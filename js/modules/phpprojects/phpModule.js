@@ -3,6 +3,8 @@ angular.module("phpModule", [])
 
 		$rootScope.section ="PHP";
 
+		$scope.img = "img/php.png";
+
 		$scope.projects = [
 				{ name: 'Project PHP - 01', url: '#',
 				description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.'},

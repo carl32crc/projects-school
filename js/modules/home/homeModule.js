@@ -12,5 +12,4 @@ angular.module("homeModule", [])
 				description:'Petita guia per controlar de forma senzilla les comandes Git, poder tenir el control del repositori.'},
 ];
 
-
 });

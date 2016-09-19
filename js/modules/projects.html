@@ -15,10 +15,11 @@
 	</div>
 </div>
 <div class="margin-bottom-projects shadow" ng-repeat="project in projects | filter : project">
+	<p ng-hide="project.name.length">There is no result</p>
 		<div class="row">
 			<div class="col-md-7">
 				<a href="{{project.url}}">
-					<img class="img-responsive" src="{{img}}" alt="">
+					<img class="img-responsive" ng-src="{{img}}" alt="">
 				</a>
 			</div>
 		<div class="col-md-5">

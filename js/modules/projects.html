@@ -1,7 +1,22 @@
 <div class="row content-margin-top">
 	<div class="col-md-12">
-		<h1 class="page-header">{{$root.section}}
-			<small>Projects
+		<div id="responsive-title-desktop">
+			<h1 class="page-header">{{$root.section}}
+				<small>Projects
+						<div class="input-group stylish-input-group">
+							<input type="text" class="form-control"  placeholder="Find a Project..." ng-model="project">
+								<span class="input-group-addon">
+									<button type="submit">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</span>
+						</div>
+				</small>
+			</h1>
+		</div>
+		<div id="responsive-title-movile">
+			<h1 class="page-header">{{$root.section}}
+			<small>Projects</h1>
 					<div class="input-group stylish-input-group">
 						<input type="text" class="form-control"  placeholder="Find a Project..." ng-model="project">
 							<span class="input-group-addon">
@@ -11,11 +26,10 @@
 							</span>
 					</div>
 			</small>
-		</h1>
+		</div>
 	</div>
 </div>
 <div class="margin-bottom-projects shadow" ng-repeat="project in projects | filter : project">
-	<p ng-hide="project.name.length">There is no result</p>
 		<div class="row">
 			<div class="col-md-7">
 				<a href="{{project.url}}">
@@ -23,11 +37,13 @@
 				</a>
 			</div>
 		<div class="col-md-5">
-			<h3>{{project.name}}</h3>
-			<h4>Descripció</h4>
-			<p>{{project.description}}</p>
-			<div class="center-button">
-				<a href="{{project.url}}"><button class="btn-projects">VIEW PROJECT</button></a>
+			<div class="padding">
+				<h3>{{project.name}}</h3>
+				<h4>Descripció</h4>
+				<p>{{project.description}}</p>
+				<div class="center-button">
+					<a href="{{project.url}}"><button class="btn-projects">VIEW PROJECT</button></a>
+				</div>
 			</div>
 		</div>
 	</div>

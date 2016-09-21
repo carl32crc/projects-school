@@ -1,9 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 
-.content-margin-top{
-	margin-top: 100px;
-}
-
 .stylish-input-group .input-group-addon{
 	background: white;
 }
@@ -25,12 +21,12 @@
 body {
   font-family: "Oswald", sans-serif;
   line-height: 1.25;
-  background-color: ;
   margin: 0;
 }
 .menuPersonal {
   background: #384150;
   padding: 2em;
+  left: 0;
   text-align: center;
 }
 .menuPersonal ul {
@@ -127,11 +123,6 @@ h5 { font-weight: bold; }
   box-shadow: 0 0 5px rgba(0,0,0,.5);
 }
 
-.thumbnail {
-  border-radius:0px;
-  border:0px;
-}
-
 .btn-projects{
   background:#4caf7c;
   color:#fff;
@@ -171,7 +162,7 @@ h5 { font-weight: bold; }
 
 .center-button{
   text-align: center;
-  margin-top: 30px;
+  overflow: hidden;
 }
 
 .padding{
@@ -182,10 +173,60 @@ h4{
   margin-bottom: 20px;
 }
 
+.menu_bar{
+  display: none;
+}
+
 @media (max-width: 768px){
 
+.menuPersonal{
+  width: 80%;
+  height: 100%;
+  z-index: 6;
+  left: -100%;
+  position: fixed;
+}
+
+.menuPersonal ul li {
+  display: block;
+  float: none;
+  padding-bottom: 20px;
+  border-bottom: rgba(255,255,255,.3);
+}
+
+.menuPersonal li:not(:last-child) {
+  border-right: 0px;
+}
+
+.menu_bar{
+  z-index: 6;
+  position: fixed;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  background-color:#384150;
+}
+
+.menu_bar .bt-menu{
+  display: block;
+  padding: 20px;
+  color: #ccc;
+  text-decoration: none;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.menu_bar i{
+  float: right;
+}
+
+.menu_bar .bt-menu span{
+  font-size: 1.4em;
+}
+
 h1{
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 #responsive-title-desktop{
@@ -202,7 +243,4 @@ h1{
 #responsive-title-movile{
   display: none;
 }
-
-
-
 }

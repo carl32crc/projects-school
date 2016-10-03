@@ -1,5 +1,20 @@
 @import 'https://fonts.googleapis.com/css?family=Oswald';
 
+.clear-list{
+  clear: both;
+}
+
+a:hover {
+  color: #23527c;
+  text-decoration: none;
+}
+
+.color-li:hover{
+  background-color: #4caf7c;
+  text-decoration: none;
+  color: #fff;
+}
+
 .stylish-input-group .input-group-addon{
 	background: white;
 }

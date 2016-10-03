@@ -1,0 +1,14 @@
+<div class="row">
+	<div class="col-md-12">
+		<div id="responsive-title-desktop">
+			<h1 class="page-header">{{$root.section}}
+				<small>Excercicis</small>
+			</h1>
+		</div>
+</div>
+
+<ul class="list-group clear-list" ng-repeat="list in listExercises">
+    <a href="{{list.url}}" target="_blank"><li class="list-group-item color-li" >
+      Exercici {{list.exercise}}
+    </li></a>
+</ul>

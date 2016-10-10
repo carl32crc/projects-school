@@ -1,7 +1,8 @@
-angular.module("exercisesPhpModule", [])
-	.controller("exercisesphp", function( $rootScope,$scope) {
+angular.module("exercises01PhpModule", [])
+	.controller("exercises01php", function( $rootScope,$scope) {
 
 		$rootScope.section ="EXERCICIS PHP";
+		$rootScope.practica ="Pràctica - 01 ICC0-M07U01I01";
 
 		$scope.listExercises = [
 				{	exercise: '01', url:'projects/project-01/exercici01.php'},

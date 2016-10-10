@@ -1,22 +1,30 @@
-module.exports = function (grunt)
-{
-  grunt.initConfig ({
+module.exports = function (grunt){
+  grunt.loadNpmTasks('grunt-contrib-concat');
+  //grunt.loadNpmTasks('grunt-contrib-watch');
 
-    'angular-builder': {
-      options: {
-        mainModule: 'mainModuleName'
+    grunt.initConfig({
+      js: {
+          files: ['js/*.js',
+                'js/modules/home/*.js',
+                'js/modules/htmlprojects/*.js',
+                'js/modules/javascriptprojects/*.js',
+                'js/modules/listexercisesphp/*.js',
+                'js/modules/phpprojects/*.js',],
+          tasks: ['concat']
       },
-      app: {
-        src:  'src/**/*.js',
-        dest: 'build/project.js'
+    concat:{
+      js:{
+        src:[   'js/*.js',
+                'js/modules/home/*.js',
+                'js/modules/htmlprojects/*.js',
+                'js/modules/javascriptprojects/*.js',
+                'js/modules/listexercisesphp/*.js',
+                'js/modules/phpprojects/*.js',
+              ],
+          dest:'main/scripts.min.js'
       }
     }
-
   });
 
-  grunt.loadNpmTasks ('grunt-angular-builder');
-
-  grunt.registerTask ('release', ['angular-builder']);
-  grunt.registerTask ('debug', ['angular-builder::debug']);
-
+  grunt.registerTask('default', ['concat']);
 };

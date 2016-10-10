@@ -1,7 +1,6 @@
 {
   "name": "projects-school",
   "version": "1.0.0",
-  "description": "",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +14,12 @@
   "bugs": {
     "url": "https://github.com/carlcrc/projects-school/issues"
   },
-  "homepage": "https://github.com/carlcrc/projects-school#readme"
+  "homepage": "https://github.com/carlcrc/projects-school#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }

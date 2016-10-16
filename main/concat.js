@@ -3,7 +3,7 @@ angular.module( 'controllers', ['homeModule','htmlModule','javascriptModule','ph
 
 angular.module('routes',['routeHome','routeHtml','routeJavascript','routePhp','routeExercisesPhp']);
 angular.module("homeModule", [])
-	.controller("home", function( $rootScope,$scope) {
+	.controller("home", ['$rootScope', '$scope', function( $rootScope,$scope) {
 
 		$rootScope.section ="HOME";
 
@@ -16,9 +16,9 @@ angular.module("homeModule", [])
 				description:'Petita guia per controlar de forma senzilla les comandes Git, poder tenir el control del repositori.'},
 ];
 
-});
+}]);
 angular.module("routeHome",[])
-	.config(function( $routeProvider ){
+	.config(['$routeProvider', function( $routeProvider ){
 
 			$routeProvider
 				.when('/',{
@@ -28,9 +28,9 @@ angular.module("routeHome",[])
 
 				.otherwise({ redirectTo: '/' });
 
-	});
+	}]);
 angular.module("htmlModule", [])
-	.controller("html", function( $rootScope,$scope) {
+	.controller("html", ['$rootScope', '$scope', function( $rootScope,$scope) {
 
 		$rootScope.section ="HTML5/CSS3";
 
@@ -42,9 +42,9 @@ angular.module("htmlModule", [])
 				{ name: 'Project HTML - 02', url: '#',
 				description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Laudantium veniam exercitationem expedita laborum at voluptate.Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.' }];
 
-});
+}]);
 angular.module("routeHtml",[])
-	.config(function( $routeProvider ){
+	.config(['$routeProvider', function( $routeProvider ){
 
 			$routeProvider
 				.when('/htmlcss',{
@@ -52,9 +52,9 @@ angular.module("routeHtml",[])
 					controller: 'html'
 				});
 
-	});
+	}]);
 angular.module("javascriptModule", [])
-	.controller("javascript", function( $rootScope,$scope) {
+	.controller("javascript", ['$rootScope', '$scope', function( $rootScope,$scope) {
 
 		$rootScope.section ="JAVASCRIPT";
 
@@ -66,9 +66,9 @@ angular.module("javascriptModule", [])
 				{ name: 'Project JavaScript- 02', url: '#',
 				description:'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Laudantium veniam exercitationem expedita laborum at voluptate.Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.' }];
 
-});
+}]);
 angular.module("routeJavascript",[])
-	.config(function( $routeProvider ){
+	.config(['$routeProvider', function( $routeProvider ){
 
 			$routeProvider
 				.when('/javascript',{
@@ -76,9 +76,9 @@ angular.module("routeJavascript",[])
 					controller: 'javascript'
 				});
 
-	});
+	}]);
 angular.module("exercises01PhpModule", [])
-	.controller("exercises01php", function( $rootScope,$scope) {
+	.controller("exercises01php", ['$rootScope', '$scope', function( $rootScope,$scope) {
 
 		$rootScope.section ="EXERCICIS PHP";
 		$rootScope.practica ="Pràctica - 01 ICC0-M07U01I01";
@@ -96,10 +96,10 @@ angular.module("exercises01PhpModule", [])
 				{	exercise: '10', url:'projects/project-01/exercici10.php'},
 				];
 
-});
+}]);
 
 angular.module("exercises02PhpModule", [])
-	.controller("exercises02php", function( $rootScope,$scope) {
+	.controller("exercises02php", ['$rootScope', '$scope', function( $rootScope,$scope) {
 
 		$rootScope.section ="EXERCICIS PHP";
       $rootScope.practica ="Pràctica - 02 ICC0-M07U01I02";
@@ -111,10 +111,10 @@ angular.module("exercises02PhpModule", [])
 				{	exercise: '04', url:'projects/project-02/exercici04.php'},
 				{	exercise: '05', url:'projects/project-02/exercici05.php'}];
 
-});
+}]);
 
 angular.module("routeExercisesPhp",[])
-	.config(function( $routeProvider ){
+	.config(['$routeProvider', function( $routeProvider ){
 
 			$routeProvider
 				.when('/exercisesphp-practica1',{
@@ -126,10 +126,10 @@ angular.module("routeExercisesPhp",[])
 					controller: 'exercises02php'
 				});
 
-	});
+	}]);
 
 angular.module("phpModule", [])
-	.controller("php", function( $rootScope,$scope) {
+	.controller("php", ['$rootScope', '$scope', function( $rootScope,$scope) {
 
 		$rootScope.section ="PHP";
 
@@ -141,10 +141,10 @@ angular.module("phpModule", [])
 				{ name: 'PHP Pràctica ICC0-M07U01I02', url: 'http://localhost/projects-school/#/exercisesphp-practica2',
 				description:'Exercicis bàsics de PHP on veiem formularis metode POST y GET, Arrays per passar dades.' }];
 
-});
+}]);
 
 angular.module("routePhp",[])
-	.config(function( $routeProvider ){
+	.config(['$routeProvider', function( $routeProvider ){
 
 			$routeProvider
 				.when('/php',{
@@ -152,4 +152,4 @@ angular.module("routePhp",[])
 					controller: 'php'
 				});
 
-	});
+	}]);
